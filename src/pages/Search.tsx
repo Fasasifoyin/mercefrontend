@@ -7,7 +7,7 @@ const Search = () => {
   const query = new URLSearchParams(search);
   const searchQuery = query.get("searchQuery");
   const [searchWord, setSearchWord] = useState(searchQuery);
-  console.log(searchWord);
+  console.log(searchWord, setSearchWord);
 
   return (
     <Box>
