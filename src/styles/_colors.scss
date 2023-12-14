@@ -1,0 +1,33 @@
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val !important;
+  }
+
+  .text-hover-#{$key} {
+    &:hover {
+      color: $val !important;
+      transition: 0.2s ease-in all !important;
+    }
+  }
+
+  .bg-#{$key} {
+    background-color: $val !important;
+  }
+
+  .bg-hover-#{$key} {
+    &:hover {
+      background-color: $val !important;
+      transition: 0.2s ease-in all !important;
+    }
+  }
+
+  .transition-#{$key} {
+    background-color: $val !important;
+  }
+}
+
+@each $key, $val in $fontWeight {
+  .fw-#{$key} {
+    font-weight: $val !important;
+  }
+}

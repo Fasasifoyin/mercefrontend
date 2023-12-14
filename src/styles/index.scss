@@ -1,0 +1,59 @@
+@import "./variables";
+
+@import "./colors";
+
+@import "./base";
+@import "./typo";
+
+.page-alignment {
+  padding: 0 1.25rem;
+
+  @media (min-width: 768px) {
+    padding: 0 3.125rem;
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 4.7rem;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0 6.25rem !important;
+  }
+}
+
+.cc-container {
+  max-width: 1440px !important;
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.logo {
+  text-decoration: underline !important;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 3px !important;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 400ms;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active:hover .transition {
+  width: 100%;
+  height: 30em;
+}
+
+.active:active {
+  transform: scale(0.97);
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}

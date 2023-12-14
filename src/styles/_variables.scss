@@ -1,0 +1,23 @@
+$white: #ffffff;
+$blue: #041527;
+$gold: rgb(255, 165, 0);
+$light-gold: #fffaf2;
+$modalColor: #364452;
+$modalBg: #f7f8f8;
+
+$colors: (
+  "white": $white,
+  "blue": $blue,
+  "gold": $gold,
+  "light-gold": $light-gold,
+  "modal": $modalColor,
+  "modalBg": $modalBg,
+);
+
+$regular: 400;
+$bold: 700;
+
+$fontWeight: (
+  "regular": $regular,
+  "bold": $bold,
+);
