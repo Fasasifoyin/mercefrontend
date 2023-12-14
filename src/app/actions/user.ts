@@ -37,6 +37,7 @@ export const signin = createAsyncThunk(
       toast.success("Signin successful");
       return data;
     } catch (error) {
+      console.log(error);
       const errorMesaage = errorHandler({ error, toast: true });
       return rejectWithValue(errorMesaage);
     }
